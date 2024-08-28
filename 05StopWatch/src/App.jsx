@@ -13,10 +13,11 @@ export default function Stopwatch() {
   //start button 
   function handleStart() {
     setStartTime(Date.now());
-    
     setNow(Date.now());
+    
 
     clearInterval(intervalRef.current);
+
     intervalRef.current = setInterval(() => {
       setNow(Date.now());
     }, 10);
@@ -28,6 +29,8 @@ export default function Stopwatch() {
 
   let secondsPassed = 0;
   if (startTime != null && now != null) {
+    // console.log(now);
+    // console.log("startTime");
     secondsPassed = (now - startTime) / 1000;
     // console.log(secondsPassed);  
   }
