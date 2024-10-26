@@ -1,13 +1,30 @@
-<!doctype html>
+<!-- index.html -->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your App</title>
+</head>
+<body >
+  <div id="root"></div>
+  
+  <!-- Background Animation -->
+  <div class="area bg-gradient-to-l from-[#8f94fb] to-[#4e54c8] w-full h-screen absolute -z-10">
+    <ul class="circles relative w-full h-[96%] overflow-hidden">
+      <li class="absolute list-none bg-white bg-opacity-20 w-20 h-20 bottom-[-150px] left-[25%] animate-[animate_25s_linear_infinite]"></li>
+      <li class="absolute list-none bg-white bg-opacity-20 w-5 h-5 bottom-[-150px] left-[10%] animate-[animate_12s_2s_linear_infinite]"></li>
+      <li class="absolute list-none bg-white bg-opacity-20 w-5 h-5 bottom-[-150px] left-[70%] animate-[animate_25s_4s_linear_infinite]"></li>
+      <li class="absolute list-none bg-white bg-opacity-20 w-16 h-16 bottom-[-150px] left-[40%] animate-[animate_18s_linear_infinite]"></li>
+      <li class="absolute list-none bg-white bg-opacity-20 w-5 h-5 bottom-[-150px] left-[65%] animate-[animate_25s_linear_infinite]"></li>
+      <li class="absolute list-none bg-white bg-opacity-20 w-28 h-28 bottom-[-150px] left-[75%] animate-[animate_25s_3s_linear_infinite]"></li>
+      <li class="absolute list-none bg-white bg-opacity-20 w-36 h-36 bottom-[-150px] left-[35%] animate-[animate_25s_7s_linear_infinite]"></li>
+      <li class="absolute list-none bg-white bg-opacity-20 w-6 h-6 bottom-[-150px] left-[50%] animate-[animate_45s_15s_linear_infinite]"></li>
+      <li class="absolute list-none bg-white bg-opacity-20 w-4 h-4 bottom-[-150px] left-[20%] animate-[animate_35s_2s_linear_infinite]"></li>
+      <li class="absolute list-none bg-white bg-opacity-20 w-36 h-36 bottom-[-150px] left-[85%] animate-[animate_11s_linear_infinite]"></li>
+    </ul>
+  </div>
+  
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
